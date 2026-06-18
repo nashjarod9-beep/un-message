@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quelque chose que je voudrais te dire...</title>
+    <meta name="description" content="Un message personnel sincère et touchant, partagé avec douceur et bienveillance.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particle canvas for bokeh / light effects -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Soft radial glow overlays -->
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="glow glow-3"></div>
+
+    <main class="container">
+        <!-- Decorative top flourish -->
+        <div class="flourish" aria-hidden="true">
+            <svg width="60" height="20" viewBox="0 0 60 20" fill="none">
+                <path d="M0 10 Q15 0 30 10 Q45 20 60 10" stroke="url(#goldGrad)" stroke-width="1.2" fill="none" opacity="0.6"/>
+                <defs>
+                    <linearGradient id="goldGrad" x1="0" y1="0" x2="60" y2="0">
+                        <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.3"/>
+                        <stop offset="50%" stop-color="#e8d48b" stop-opacity="0.8"/>
+                        <stop offset="100%" stop-color="#c9a84c" stop-opacity="0.3"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+
+        <!-- Main title -->
+        <h1 class="title fade-up" id="main-title">
+            Quelque chose que je voudrais te dire<span class="ellipsis">...</span>
+        </h1>
+
+        <!-- Subtle separator -->
+        <div class="separator fade-up delay-1" aria-hidden="true">
+            <span class="sep-line"></span>
+            <span class="sep-diamond">◇</span>
+            <span class="sep-line"></span>
+        </div>
+
+        <!-- Message text -->
+        <div class="fade-up delay-2">
+            <p class="message" id="welcome-text">
+                Merci de prendre quelques instants pour cliquer sur ce bouton et découvrir ce qu'il y a de l'autre côté. C'est important pour moi. Peu importe où nous en sommes aujourd'hui, je tenais simplement à partager ceci avec toi. J'espère que tu prendras le temps de regarder jusqu'au bout.
+            </p>
+            <p class="signature">— Nash Jarod</p>
+        </div>
+
+        <!-- Heart / light icon -->
+        <div class="icon-container fade-up delay-3" aria-hidden="true">
+            <div class="icon-glow"></div>
+            <svg class="heart-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="cta-wrapper fade-up delay-4">
+            <a href="https://youtube.com/shorts/BHmHlCQzVkw?si=NHhLkFByhYc4I33e" class="cta-button" id="discover-button" role="button">
+                <span class="btn-shimmer"></span>
+                <span class="btn-text">Découvrir le message</span>
+                <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+
+        <!-- Reassuring footer text -->
+        <p class="footer-text fade-up delay-5" id="footer-thanks">
+            Merci d'avoir pris un instant pour me lire.
+        </p>
+
+        <!-- Bottom flourish -->
+        <div class="flourish bottom-flourish" aria-hidden="true">
+            <svg width="60" height="20" viewBox="0 0 60 20" fill="none">
+                <path d="M0 10 Q15 20 30 10 Q45 0 60 10" stroke="url(#goldGrad2)" stroke-width="1.2" fill="none" opacity="0.4"/>
+                <defs>
+                    <linearGradient id="goldGrad2" x1="0" y1="0" x2="60" y2="0">
+                        <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.2"/>
+                        <stop offset="50%" stop-color="#e8d48b" stop-opacity="0.6"/>
+                        <stop offset="100%" stop-color="#c9a84c" stop-opacity="0.2"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
